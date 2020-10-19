@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/Edt_text_name"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/DogName"
+        android:textColorHint="#9A9191"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/btn1_margintop"
+        />
+    <EditText
+        android:id="@+id/Edt_text_breed"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/DogBreedName"
+        android:textColorHint="#9A9191"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@id/Edt_text_name"
+        app:layout_constraintEnd_toEndOf="@id/Edt_text_name"
+        app:layout_constraintTop_toBottomOf="@id/Edt_text_name"
+        android:layout_marginTop="@dimen/btn2_margintop"
+        />
+
+    <EditText
+        android:id="@+id/Edt_text_colour"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/DogColour"
+        android:textColorHint="#9A9191"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@id/Edt_text_breed"
+        app:layout_constraintEnd_toEndOf="@id/Edt_text_breed"
+        app:layout_constraintTop_toBottomOf="@id/Edt_text_breed"
+        android:layout_marginTop="@dimen/btn2_margintop"
+        />
+
+    <EditText
+        android:id="@+id/Edt_text_age"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/DogAge"
+        android:textColorHint="#9A9191"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@id/Edt_text_colour"
+        app:layout_constraintEnd_toEndOf="@id/Edt_text_colour"
+        app:layout_constraintTop_toBottomOf="@id/Edt_text_colour"
+        android:layout_marginTop="@dimen/btn2_margintop"
+        />
+     <Button
+         android:id="@+id/save_button"
+         android:layout_width="@dimen/edittext_width"
+         android:layout_height="wrap_content"
+         android:text="@string/SAVE"
+         app:layout_constraintStart_toStartOf="@id/Edt_text_age"
+         app:layout_constraintEnd_toEndOf="@id/Edt_text_age"
+         app:layout_constraintTop_toBottomOf="@id/Edt_text_age"
+         android:layout_marginTop="@dimen/btn2_margintop"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
